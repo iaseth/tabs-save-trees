@@ -10,6 +10,7 @@ fn main() {
 			.help("Files or directories to process"))
 		.arg(Arg::new("--save")
 			.long("save")
+			.action(clap::ArgAction::SetTrue)
 			.help("Modify files to use tabs instead of spaces"))
 		.get_matches();
 
